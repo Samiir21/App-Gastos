@@ -4,7 +4,9 @@ main { max-width: 500px; margin: 0 auto; background: #fff; padding: 20px; border
 #registro { display: grid; grid-template-columns: 1fr 1fr auto; gap: 8px; margin-bottom: 14px; }
 input { padding: 10px; border: 1px solid #ccc; border-radius: 8px; width: 100%; }
 button { background-color: #1572e8; color: #fff; border: none; border-radius: 8px; padding: 10px 14px; cursor: pointer; }
-button:hover { opacity: 0.9; }
+button:hover, button:focus { opacity: 0.9; }
 #gasto-item { margin-bottom: 8px; }
 .gasto-item { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 8px 10px; border: 1px solid #e2e5ea; border-radius: 8px; margin-bottom: 6px; }
 .eliminar { background: #de3131; }
+.sin-gastos { color: #777; font-style: italic; margin: 8px 0; }
+.error-msg { color: #a50000; background: #ffdada; padding: 8px 10px; border: 1px solid #ff9a9a; border-radius: 8px; margin: 8px 0 12px; }

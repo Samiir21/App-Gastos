@@ -3,10 +3,20 @@
 Proyecto inicial de control de gastos con HTML/JS/CSS.
 
 ## Cómo usar
-1. Abre `index.html` en un navegador.
-2. Ingresa una descripción y monto.
-3. Haz clic en "Agregar gasto".
-4. El total se actualiza automáticamente.
+1. Abre `index.html` en un navegador o ejecuta un servidor local:
+   - `python -m http.server 8000`
+   - `npx http-server -p 8000`
+2. Ve a `http://localhost:8000`.
+3. Ingresa descripción y monto.
+4. Haz clic en "Agregar gasto".
+5. El total se actualiza y los gastos se guardan automáticamente en localStorage.
+
+## Funcionalidades implementadas
+- Agregar gasto con validación básica.
+- Eliminación de gasto.
+- Total dinámico en pantalla.
+- Persistencia con localStorage (se mantiene tras recargar).
+- Mensaje de lista vacía y mensajes de error inline.
 
 ## Estructura
 - `index.html`
