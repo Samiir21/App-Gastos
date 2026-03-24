@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi App de Gastos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h4>Mi Balance</h4>
+        <h1 id="balance">$0.00</h1>
+
+        <div class="inc-exp-container">
+            <div>
+                <h4>Ingresos</h4>
+                <p id="money-plus" class="money plus">+$0.00</p>
+            </div>
+            <div>
+                <h4>Gastos</h4>
+                <p id="money-minus" class="money minus">-$0.00</p>
+            </div>
+        </div>
+
+        <h3>Historial</h3>
+        <ul id="list" class="list"></ul>
+
+        <h3>Añadir nueva transacción</h3>
+        <form id="form">
+            <input type="text" id="text" placeholder="Concepto (ej. Almuerzo)" required>
+            <input type="number" id="amount" placeholder="Monto (negativo para gasto)" required>
+            <button class="btn">Agregar Transacción</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
