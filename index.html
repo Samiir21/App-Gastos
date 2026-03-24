@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App-Gastos</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>App-Gastos</h1>
+      <section id="registro">
+        <input id="descripcion" type="text" placeholder="Descripción" />
+        <input id="monto" type="number" step="0.01" placeholder="Monto" />
+        <button id="agregar">Agregar gasto</button>
+      </section>
+      <section id="balance">
+        <h2>Total: <span id="total">0.00</span></h2>
+      </section>
+      <section id="lista"></section>
+    </main>
+    <script src="src/main.js"></script>
+  </body>
+</html>
